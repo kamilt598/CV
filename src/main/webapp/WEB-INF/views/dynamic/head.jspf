@@ -11,7 +11,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-<%--  <link href='<c:url value="/resources/img/favicon.png"/>' rel="icon">--%>
+  <link href='<c:url value="/resources/img/favicon.png"/>' rel="icon">
   <link href='<c:url value="/resources/img/apple-touch-icon.png"/>' rel="apple-touch-icon">
 
   <!-- Google Fonts -->
