@@ -1,6 +1,7 @@
 package com.example.config;
 
 import com.example.repository.UserEntityRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
@@ -12,48 +13,29 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import javax.sql.DataSource;
+
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private final UserEntityRepository repository;
+    private final DataSource dataSource;
 
-    public WebSecurityConfig(UserEntityRepository repository) {
-        this.repository = repository;
+    public WebSecurityConfig(DataSource dataSource) {
+        this.dataSource = dataSource;
     }
 
-
-/*
     @Bean
     protected PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.authenticationProvider(authenticationProvider());
+    @Autowired
+    public void configAuthentication(AuthenticationManagerBuilder auth) throws Exception {
+        auth.jdbcAuthentication().dataSource(dataSource)
+                .usersByUsernameQuery("select username,password,enable from users where username=?")
+                .authoritiesByUsernameQuery("select username, roles from users where username=?");
     }
-
-
-    @Bean
-    public AuthenticationProvider authenticationProvider() {
-        DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-        AppUserDetailsService appUserDetailsService = new AppUserDetailsService(repository);
-        provider.setUserDetailsService(appUserDetailsService);
-        return provider;
-    }
-*/
-
-
-
-@Override
-protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-    auth.inMemoryAuthentication()
-            .withUser("user").password("user").roles("USER")
-            .and()
-            .withUser("admin").password("admin").roles("ADMIN");
-}
-
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -72,8 +54,9 @@ protected void configure(AuthenticationManagerBuilder auth) throws Exception {
                 .passwordParameter("password")
                 .loginProcessingUrl("/login")
                 .failureForwardUrl("/login?error")
+                .defaultSuccessUrl("/index")
                 .and()
                 .logout()
-                .logoutSuccessUrl("/login");
+                .logoutSuccessUrl("/index");
     }
 }
