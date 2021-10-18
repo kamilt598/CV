@@ -10,6 +10,5 @@ import java.util.List;
 public interface FactsRepository extends JpaRepository<FactsEntity, Long> {
 
     FactsEntity save(FactsEntity factsEntity);
-    FactsEntity findById(Long id);
     List<FactsEntity> findAll();
 }

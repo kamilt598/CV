@@ -43,7 +43,7 @@ public class About {
 
     @RequestMapping(value = {"/editAbout/{id}"}, method = RequestMethod.GET)
     public String getEditAbout(Model model, @PathVariable("id") Long id) {
-        AboutEntity aboutEntity = aboutRepository.findById(id);
+        AboutEntity aboutEntity = aboutRepository.findById(id).orElse(null);
         model.addAttribute("about", aboutEntity);
         return "/editAbout";
     }
@@ -56,7 +56,7 @@ public class About {
 
     @RequestMapping(value = {"/editFacts/{id}"}, method = RequestMethod.GET)
     public String getEditFacts(Model model, @PathVariable("id") Long id) {
-        FactsEntity factsEntity = factsRepository.findById(id);
+        FactsEntity factsEntity = factsRepository.findById(id).orElse(null);
         model.addAttribute("facts", factsEntity);
         return "/editFacts";
     }
@@ -69,7 +69,7 @@ public class About {
 
     @RequestMapping(value = {"/editSkills/{id}"}, method = RequestMethod.GET)
     public String getEditSkills(Model model, @PathVariable("id") Long id) {
-        SkillsEntity skillsEntity = skillsRepository.findById(id);
+        SkillsEntity skillsEntity = skillsRepository.findById(id).orElse(null);
         model.addAttribute("skills", skillsEntity);
         return "/editSkills";
     }

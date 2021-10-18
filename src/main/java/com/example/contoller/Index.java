@@ -31,7 +31,7 @@ public class Index {
 
     @RequestMapping(value = {"/editIndex/{id}"}, method = RequestMethod.GET)
     public String getEditIndex(Model model, @PathVariable("id") Long id) {
-        IndexEntity indexEntity = indexRepository.findById(id);
+        IndexEntity indexEntity = indexRepository.findById(id).orElse(null);
         model.addAttribute("index", indexEntity);
         return "/editIndex";
     }

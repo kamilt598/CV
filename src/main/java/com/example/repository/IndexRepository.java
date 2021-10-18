@@ -10,7 +10,6 @@ import java.util.List;
 public interface IndexRepository extends JpaRepository<IndexEntity, Long> {
 
     IndexEntity save(IndexEntity mainEntity);
-    IndexEntity findById(Long id);
     List<IndexEntity> findAll();
 
 }

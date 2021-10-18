@@ -10,7 +10,6 @@ import java.util.List;
 public interface SkillsRepository extends JpaRepository<SkillsEntity, Long> {
 
     SkillsEntity save(SkillsEntity skillsEntity);
-    SkillsEntity findById(Long id);
     List<SkillsEntity> findAll();
 
 }
