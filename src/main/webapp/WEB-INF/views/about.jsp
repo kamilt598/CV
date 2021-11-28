@@ -9,7 +9,6 @@
     <li><a href='<c:url value="about"/>' class="nav-link active"><i class="bx bx-user"></i> <span>About</span></a></li>
     <li><a href='<c:url value="resume"/>' class="nav-link "><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
     <li><a href='<c:url value="portfolio"/>' class="nav-link "><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-    <li><a href='<c:url value="services"/>' class="nav-link "><i class="bx bx-server"></i> <span>Services</span></a></li>
     <li><a href='<c:url value="contact"/>' class="nav-link "><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
     <sec:authorize access="!isAuthenticated()">
       <li><a href='<c:url value="login"/>' class="nav-link "><i class="bx bx-log-in"></i> <span>Log In</span></a></li>
@@ -21,6 +20,8 @@
 </nav><!-- .nav-menu -->
 </div>
 </header><!-- End Header -->
+
+<main id="main">
 
    <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -73,6 +74,8 @@
           </c:forEach>
         </sec:authorize>
         </div>
+      </div>
+    </section>
 
         <!-- ======= Facts Section ======= -->
         <section id="facts" class="facts">
@@ -118,18 +121,18 @@
               </div>
 
             </div>
-
+            <div style="float: right">
+              <sec:authorize access="hasRole('ADMIN')">
+                <c:forEach items="${facts}" var="title">
+                  <a href='<c:url value="/editFacts/${title.id}"/>'
+                     class="btn-right btn btn-secondary" role="button"><i class="bx bx-edit"></i>Edit Facts</a>
+                </c:forEach>
+              </sec:authorize>
+            </div>
           </div>
         </section><!-- End Facts Section -->
 
-        <div style="float: right">
-          <sec:authorize access="hasRole('ADMIN')">
-            <c:forEach items="${facts}" var="title">
-              <a href='<c:url value="/editFacts/${title.id}"/>'
-                 class="btn-right btn btn-secondary" role="button"><i class="bx bx-edit"></i>Edit Facts</a>
-            </c:forEach>
-          </sec:authorize>
-        </div>
+
 
         <!-- ======= Skills Section ======= -->
         <section id="skills" class="skills section-bg">
@@ -193,23 +196,17 @@
               </div>
 
             </div>
-
+            <div style="float: right">
+              <sec:authorize access="hasRole('ADMIN')">
+                <c:forEach items="${skills}" var="title">
+                  <a href='<c:url value="/editSkills/${title.id}"/>'
+                     class="btn-right btn btn-secondary" role="button"><i class="bx bx-edit"></i>Edit Skills</a>
+                </c:forEach>
+              </sec:authorize>
+            </div>
           </div>
         </section><!-- End Skills Section -->
 
-        <div style="float: right">
-          <sec:authorize access="hasRole('ADMIN')">
-            <c:forEach items="${skills}" var="title">
-              <a href='<c:url value="/editSkills/${title.id}"/>'
-                 class="btn-right btn btn-secondary" role="button"><i class="bx bx-edit"></i>Edit Skills</a>
-            </c:forEach>
-          </sec:authorize>
-        </div>
-
-
-
-      </div>
-
-    </section><!-- End About Section -->
+</main>
 
     <%@include file="dynamic/footer.jspf"%>
