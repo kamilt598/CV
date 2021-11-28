@@ -1,1 +1,0 @@
-web: java $JAVA_OPTS -war target/dependency/demo-0.0.1-SNAPSHOT.war --port $PORT target/*.war
