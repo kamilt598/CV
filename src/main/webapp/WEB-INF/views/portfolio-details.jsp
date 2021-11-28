@@ -85,5 +85,5 @@
 
       </div>
     </section><!-- End Portfolio Details Section -->
-
+  </main>
 <%@include file="dynamic/footer.jspf"%>

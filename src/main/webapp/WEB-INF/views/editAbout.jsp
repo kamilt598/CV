@@ -19,7 +19,7 @@
 </nav><!-- .nav-menu -->
 </div>
 </header><!-- End Header -->
-
+<main id="main">
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
   <div class="container">
@@ -115,7 +115,7 @@
                                name="degree" value="${about.degree}">
                       </div>
                   </span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>
                     <div class="col-10">
                         <input class="form-control" type="text" placeholder="${about.email}"
                                name="email" value="${about.email}">
@@ -144,5 +144,5 @@
       </form>
 
     </section><!-- End About Section -->
-
+</main>
     <%@include file="dynamic/footer.jspf"%>

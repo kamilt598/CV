@@ -18,7 +18,7 @@
 </nav><!-- .nav-menu -->
 </div>
 </header><!-- End Header -->
-
+<main id="main">
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
@@ -37,5 +37,5 @@
     </form>
   </section><!-- End Hero -->
 
-
+</main>
   <%@include file="dynamic/footer.jspf"%>

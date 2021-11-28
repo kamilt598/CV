@@ -19,7 +19,7 @@
 </nav><!-- .nav-menu -->
 </div>
 </header><!-- End Header -->
-
+<main id="main">
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
   <div class="container">
@@ -100,5 +100,5 @@
   </div>
   </form>
 </section><!-- End Facts Section -->
-
+</main>
     <%@include file="dynamic/footer.jspf"%>

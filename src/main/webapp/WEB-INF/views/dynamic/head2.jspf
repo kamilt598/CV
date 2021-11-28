@@ -47,7 +47,7 @@
 
       <div class="profile">
         <img src="../resources/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Jan Kowalski</a></h1>
+        <h1 class="text-light"><a href="index.html">Kamil Tomczyk</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.facebook.com/kamil.tomczyk/" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://www.linkedin.com/in/kamtom/" class="linkedin"><i class="bx bxl-linkedin"></i></a>

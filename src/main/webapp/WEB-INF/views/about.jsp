@@ -55,7 +55,7 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>${about.get(0).age}</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>${about.get(0).degree}</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>${about.get(0).email}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>${about.get(0).email}</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>${about.get(0).freelance}</span></li>
                 </ul>
               </div>
