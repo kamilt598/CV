@@ -107,4 +107,3 @@
   </form>
 </section><!-- End Skills Section -->
 </main>
-    <%@include file="dynamic/footer.jspf"%>

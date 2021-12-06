@@ -209,4 +209,3 @@
 
 </main>
 
-    <%@include file="dynamic/footer.jspf"%>

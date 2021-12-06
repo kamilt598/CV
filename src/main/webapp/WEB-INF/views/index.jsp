@@ -34,4 +34,3 @@
   </section><!-- End Hero -->
 
 
-  <%@include file="dynamic/footer.jspf"%>
