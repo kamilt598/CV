@@ -58,7 +58,7 @@
               <input class="form-control" type="text" placeholder="${facts.clients}"
                      name="clients" value="${facts.clients}">
             </span>
-          <p><strong>Happy Clients</strong> consequuntur quae</p>
+          <p><strong>Happy Clients</strong></p>
         </div>
       </div>
 
@@ -69,7 +69,7 @@
               <input class="form-control" type="text" placeholder="${facts.projects}"
                      name="projects" value="${facts.projects}">
             </span>
-          <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+          <p><strong>Projects</strong></p>
         </div>
       </div>
 
@@ -80,7 +80,7 @@
               <input class="form-control" type="text" placeholder="${facts.hours}"
                      name="hours" value="${facts.hours}">
             </span>
-          <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+          <p><strong>Hours Of Support</strong></p>
         </div>
       </div>
 
@@ -91,7 +91,7 @@
               <input class="form-control" type="text" placeholder="${facts.workers}"
                      name="workers" value="${facts.workers}">
             </span>
-          <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+          <p><strong>Hard Workers</strong></p>
         </div>
       </div>
 

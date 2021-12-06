@@ -92,7 +92,7 @@
                 <div class="count-box">
                   <i class="bi bi-emoji-smile"></i>
                   <span data-purecounter-start="0" data-purecounter-end="${facts.get(0).clients}" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><strong>Happy Clients</strong> consequuntur quae</p>
+                  <p><strong>Happy Clients</strong></p>
                 </div>
               </div>
 
@@ -100,7 +100,7 @@
                 <div class="count-box">
                   <i class="bi bi-journal-richtext"></i>
                   <span data-purecounter-start="0" data-purecounter-end="${facts.get(0).projects}" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+                  <p><strong>Projects</strong></p>
                 </div>
               </div>
 
@@ -108,7 +108,7 @@
                 <div class="count-box">
                   <i class="bi bi-headset"></i>
                   <span data-purecounter-start="0" data-purecounter-end="${facts.get(0).hours}" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+                  <p><strong>Hours Of Support</strong></p>
                 </div>
               </div>
 
@@ -116,7 +116,7 @@
                 <div class="count-box">
                   <i class="bi bi-people"></i>
                   <span data-purecounter-start="0" data-purecounter-end="${facts.get(0).workers}" data-purecounter-duration="1" class="purecounter"></span>
-                  <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+                  <p><strong>Hard Workers</strong></p>
                 </div>
               </div>
 
@@ -148,21 +148,21 @@
               <div class="col-lg-6" data-aos="fade-up">
 
                 <div class="progress">
-                  <span class="skill">HTML <i class="val">${skills.get(0).html}%</i></span>
+                  <span class="skill">Java <i class="val">${skills.get(0).html}%</i></span>
                   <div class="progress-bar-wrap">
                     <div class="progress-bar" role="progressbar" aria-valuenow="${skills.get(0).html}" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="progress">
-                  <span class="skill">CSS <i class="val">${skills.get(0).css}%</i></span>
+                  <span class="skill">GIT <i class="val">${skills.get(0).css}%</i></span>
                   <div class="progress-bar-wrap">
                     <div class="progress-bar" role="progressbar" aria-valuenow="${skills.get(0).css}" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="progress">
-                  <span class="skill">JavaScript <i class="val">${skills.get(0).javascript}%</i></span>
+                  <span class="skill">Spring <i class="val">${skills.get(0).javascript}%</i></span>
                   <div class="progress-bar-wrap">
                     <div class="progress-bar" role="progressbar" aria-valuenow="${skills.get(0).javascript}" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
@@ -173,21 +173,21 @@
               <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="progress">
-                  <span class="skill">PHP <i class="val">${skills.get(0).php}%</i></span>
+                  <span class="skill">SQL <i class="val">${skills.get(0).php}%</i></span>
                   <div class="progress-bar-wrap">
                     <div class="progress-bar" role="progressbar" aria-valuenow="${skills.get(0).php}" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="progress">
-                  <span class="skill">WordPress/CMS <i class="val">${skills.get(0).wordpress}%</i></span>
+                  <span class="skill">JDBC <i class="val">${skills.get(0).wordpress}%</i></span>
                   <div class="progress-bar-wrap">
                     <div class="progress-bar" role="progressbar" aria-valuenow="${skills.get(0).wordpress}" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
 
                 <div class="progress">
-                  <span class="skill">Photoshop <i class="val">${skills.get(0).photoshop}%</i></span>
+                  <span class="skill">JUnit <i class="val">${skills.get(0).photoshop}%</i></span>
                   <div class="progress-bar-wrap">
                     <div class="progress-bar" role="progressbar" aria-valuenow="${skills.get(0).photoshop}" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>

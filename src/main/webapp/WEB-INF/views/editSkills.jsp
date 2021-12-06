@@ -54,21 +54,21 @@
       <div class="col-lg-6" data-aos="fade-up">
 
         <div class="progress">
-          <span class="skill">HTML <i class="val">
+          <span class="skill">Java <i class="val">
             <input class="form-control" type="text" placeholder="${skills.html}"
                    name="html" value="${skills.html}">
           </i></span>
         </div>
 
         <div class="progress">
-          <span class="skill">CSS <i class="val">
+          <span class="skill">GIT <i class="val">
             <input class="form-control" type="text" placeholder="${skills.css}"
                    name="css" value="${skills.css}">
           </i></span>
         </div>
 
         <div class="progress">
-          <span class="skill">JavaScript <i class="val">
+          <span class="skill">Spring <i class="val">
             <input class="form-control" type="text" placeholder="${skills.javascript}"
                    name="javascript" value="${skills.javascript}">
           </i></span>
@@ -79,21 +79,21 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
         <div class="progress">
-          <span class="skill">PHP <i class="val">
+          <span class="skill">SQL <i class="val">
             <input class="form-control" type="text" placeholder="${skills.php}"
                    name="php" value="${skills.php}">
           </i></span>
         </div>
 
         <div class="progress">
-          <span class="skill">WordPress/CMS <i class="val">
+          <span class="skill">JDBC <i class="val">
             <input class="form-control" type="text" placeholder="${skills.wordpress}"
                    name="wordpress" value="${skills.wordpress}">
           </i></span>
         </div>
 
         <div class="progress">
-          <span class="skill">Photoshop <i class="val">
+          <span class="skill">JUnit <i class="val">
             <input class="form-control" type="text" placeholder="${skills.photoshop}"
                    name="photoshop" value="${skills.photoshop}">
           </i></span>
