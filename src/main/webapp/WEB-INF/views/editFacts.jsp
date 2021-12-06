@@ -101,3 +101,4 @@
   </form>
 </section><!-- End Facts Section -->
 </main>
+<%@include file="dynamic/footer.jspf"%>

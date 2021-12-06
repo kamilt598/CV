@@ -59,6 +59,6 @@
       </div>
     </section><!-- End Contact Section -->
 </main>
-
+<%@include file="dynamic/footer.jspf"%>
 
   

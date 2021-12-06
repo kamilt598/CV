@@ -69,4 +69,4 @@
       </div>
     </section><!-- End Resume Section -->
 </main>
-
+<%@include file="dynamic/footer.jspf"%>

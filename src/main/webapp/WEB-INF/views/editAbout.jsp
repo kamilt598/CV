@@ -145,3 +145,4 @@
 
     </section><!-- End About Section -->
 </main>
+<%@include file="dynamic/footer.jspf"%>
