@@ -8,6 +8,7 @@
     <li><a href='<c:url value="../portfolio"/>' class="nav-link "><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
     <li><a href='<c:url value="../contact"/>' class="nav-link "><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
     <sec:authorize access="!isAuthenticated()">
+      <h6>Jesli chcesz zobaczyc dodatkowe dzialania - zaloz konto</h6>
       <li><a href='<c:url value="../login"/>' class="nav-link "><i class="bx bx-log-in"></i> <span>Log In</span></a></li>
     </sec:authorize>
     <sec:authorize access="isAuthenticated()">

@@ -25,6 +25,7 @@
 		<div class="card">
 			<div class="card-header">
 				<h3>Sign In</h3>
+				<h3>Jesli chcesz zobaczyc dodatkowe dzialania - zaloz konto</h3>
 				<div class="d-flex justify-content-end social_icon">
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>
